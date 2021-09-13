@@ -1,21 +1,10 @@
-import React, { useState } from 'react';
-import BlogCart from './components/BlogCart';
-import PostForm from './components/PostForm';
+import React from 'react';
+import './App.css';
 
 const App = () => {
-
-
-    const [allPost, setAllPost] = useState([])
     return (
         <div ClassName="App">
-            <PostForm 
-            allPost={allPost} 
-            setAllPost={setAllPost}
-            />
-            <BlogCart 
-            allPost={allPost} 
-            setAllPost={setAllPost}
-            />
+            Ok look i'm using this App.js
         </div>
     );
 };
