@@ -6,8 +6,10 @@ const PostForm = ({allPostData, setAllPostData}) => {
     const [postData, setPostData] = useState('')
 
     const handlePostSubmit = () => {
-        
+        setAllPostData([...allPostData, postData]);
+        // console.log({allPostData});
     }
+
     return (
         <Container>
             <Grid container>
@@ -17,7 +19,8 @@ const PostForm = ({allPostData, setAllPostData}) => {
                     multiline 
                     miniRows="6" 
                     id="standard-basic" 
-                    label="Standard" 
+                    label="Standard"
+                    onChange={(e) => setPostData(e.target.value)}
                     />
             </Grid>
             <Grid item xs={12}>
